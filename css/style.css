@@ -288,6 +288,7 @@ h1, h2, h3, h4 {
     display: flex;
     flex-wrap: wrap; /* Додано для перенесення на новий рядок */
     align-items: center; /* Вертикальне вирівнювання елементів */
+    align-content: center;
     justify-content: space-around;
     gap: 10px; /* Додано gap для проміжків */
     padding: 20px;
