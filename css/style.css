@@ -539,3 +539,161 @@ footer {
     border-radius: 0 5px 5px 0;
     cursor: pointer;
 }
+
+/* Медіа-запити для адаптивності */
+
+/* Для мобільних пристроїв (ширина екрана до 768px) */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .header_logo {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .header nav {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .main_banner {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+
+    .main_banner_text_container {
+        max-width: 100%;
+    }
+
+    .main_banner_image_container {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .categories {
+        flex-direction: column;
+    }
+
+    .category {
+        width: 100%;
+    }
+
+    #about_us {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .about_us_text_container {
+        width: 100%;
+    }
+    
+    .about_us_image_container {
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+    
+    .work_for_you {
+        flex-wrap: wrap;
+    }
+    
+    .wfy {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+    
+    .catalog_container {
+        justify-content: center;
+    }
+    
+    .item {
+        width: 48%;
+    }
+    
+    .reviews {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .review_grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .reviews_form {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    form {
+        width: 100%;
+    }
+    
+    .delivery_steps {
+        flex-direction: column;
+    }
+    
+    .delivery_step {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .footer_container {
+        flex-direction: column;
+    }
+    
+    .footer_column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .footer_right {
+        align-items: flex-start;
+    }
+}
+
+/* Для планшетів (ширина екрана від 769px до 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .main_banner {
+    height: auto;
+    }
+    
+    .categories {
+        flex-wrap: wrap;
+    }
+    
+    .category {
+        width: 48%;
+    }
+    
+    .work_for_you {
+        flex-wrap: wrap;
+    }
+    
+    .wfy {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+    
+    .catalog_container {
+        justify-content: center;
+    }
+    
+    .item {
+        width: 48%;
+    }
+}
